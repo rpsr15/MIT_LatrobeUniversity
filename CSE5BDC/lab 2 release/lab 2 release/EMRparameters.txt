@@ -1,0 +1,3 @@
+//Copy and paste the following into the Arguments window (make sure you substitute your student number into it)
+s3://inputdatafiles/Lab02Data.txt
+s3://latrobe-bdc/<student number>/lab02/longest_word_output

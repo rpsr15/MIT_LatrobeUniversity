@@ -1,0 +1,81 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class MusicDriver
+{
+
+    private MusicTrack track1;
+    private MusicTrack track2;
+    private MusicTrack track3;
+
+    private Scanner keyboard;
+	
+	 private final int EXIT = 8;
+	
+    public static void main( String[] args ) throws IOException
+    {
+        MusicDriver mD = new MusicDriver( );
+        System.out.println( "** Name StudentNumber **" );  //<------Edit
+		  System.out.println( "Audio Generator Part A" );
+        mD.run();
+    }
+
+    public MusicDriver( )
+    {
+        keyboard = new Scanner( System.in );
+        track1 = null;
+        track2 = null;
+        track3 = null;
+    }
+
+    private  void displayMenu( )
+    {
+       
+    }
+
+    public void run( ) throws IOException
+    {
+        int choice = -1;
+        while( choice != EXIT )
+        {
+            displayMenu( );
+            System.out.print( "Enter choice >> " );
+            choice = keyboard.nextInt( );
+            keyboard.nextLine( );
+            System.out.println( );
+            process( choice );
+        }
+    }
+
+    private void process( int choice ) throws IOException
+    {
+		//Edit and complete
+        switch( choice )
+        {
+            case EXIT :
+                // just trap this choice
+                break;
+            default:
+                System.out.println("\nThat is not a valid choice");
+                break;
+        }
+    }
+
+    private MusicTrack searchTrack( String songName, String artist )
+    {
+		//Edit and complete
+        if( ( track1!=null ) )
+        {
+            
+        }
+        else if( ( track2!=null ) )
+        {
+            
+        }
+        else if( ( track3!=null ) )
+        {
+            
+        }
+    }
+
+}
