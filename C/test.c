@@ -5,14 +5,14 @@
 int main(void) {
 
     char letter = 'A', 
-         grid[10][10] = {0};
+    grid[10][10] = {0};
     int i = 0,
-        j = 0,
-        up = 0,   /* directions are essentially bools, written as ints to */
-        down = 0, /* conform with C89 standard.                           */
-        left = 0,
-        right = 0,
-        move = 0;
+    j = 0,
+    up = 0,   /* directions are essentially bools, written as ints to */
+    down = 0, /* conform with C89 standard.                           */
+    left = 0,
+    right = 0,
+    move = 0;
 
     srand((unsigned) time(NULL));
 
